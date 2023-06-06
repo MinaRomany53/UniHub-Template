@@ -50,16 +50,19 @@
           <button class="mobile_btn" id="mobile_btn" data-state="open">
             <i class="fa-solid fa-bars icon"></i>
           </button>
-          <!--Start Nav before login-->
-          <ul class="nav hidden">
-            <li class="link-item">
-              <a href="login.html" class="link login-link">Login</a>
-            </li>
-            <li class="link-item">
-              <a href="signup.html" class="btn sign-btn link">Sign up</a>
-            </li>
-          </ul> 
-          <!--End Nav before login-->
+          <!--Start Nav after login-->
+          <div class="nav nav_login hidden">
+            <a href="#" class="link-item account__chat">
+              <i class="fa-solid fa-comments icon"></i>
+            </a>
+            <a href="account.html" class="link-item account__image">
+              <img src="./imgs/default/default-1.png" class="seller__info__img" alt="seller-img" />
+            </a>
+            <div class="link-item">
+              <a href="#" class="btn sell-btn link">Sell</a>
+            </div>
+          </div>
+          <!--End Nav after login-->
         </div>
         <div class="row--2">
           <ul class="categories">

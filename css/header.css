@@ -100,6 +100,54 @@ header .container .row--1 {
   font-size: 1.5rem;
 }
 
+/* Start Nav after login */
+.nav_login {
+}
+.nav_login .link-item {
+  margin-left: 2rem !important;
+}
+.nav_login .account__chat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.5rem;
+  text-decoration: none;
+  padding: 0 2rem;
+  cursor: pointer;
+}
+.nav_login .account__chat .icon {
+  font-size: 2.5rem;
+  color: var(--color-btns);
+  transition: all 0.3s;
+}
+.nav_login .account__chat .icon:hover {
+  color: var(--color-secondary);
+}
+
+.nav_login .account__image {
+  text-decoration: none;
+  height: 4.5rem;
+}
+.nav_login .account__image img {
+  max-width: 4.5rem;
+  height: 4.5rem;
+  transition: all 0.3s;
+}
+.nav_login .account__image img:hover {
+  border: 2px solid var(--color-secondary);
+}
+.nav_login .sell-btn {
+  background-color: #fff;
+  border-radius: 0.8rem;
+  height: 100%;
+  padding: 0 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+}
+/* End Nav after login */
+
 .nav {
   display: flex;
 }
