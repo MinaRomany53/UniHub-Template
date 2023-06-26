@@ -93,9 +93,103 @@
       <!-- Start Items Section -->
       <section class="items">
         <div class="container">
+
           <div class="filter__block">
-            <h2>Filtering - Block</h2>
+
+            <div class="filter__col">
+              <h2>Sort By</h2>
+              <div class="filter__labels">
+                <label>
+                  <input type="radio" name="sort" value="-createAt" checked>
+                  Newly listed
+                </label>
+                <label>
+                  <input type="radio" name="sort" value="price">
+                  Lowest price
+                </label>
+                <label>
+                  <input type="radio" name="sort" value="-price">
+                  Highest price
+                </label>
+              </div>
+            </div>
+
+            <div class="filter__col">
+              <h2>Condition</h2>
+              <div class="filter__labels">
+                <label>
+                  <input type="radio" name="condition" value="Used" checked>
+                  Used
+                </label>
+                <label>
+                  <input type="radio" name="condition" value="New">
+                  New
+                </label>
+              </div>
+            </div>
+
+            <div class="filter__col">
+              <h2 style=" text-align: center">Locations</h2>
+              <div class="filter__labels">
+                <select id="egypt-cities">
+                  <option value="">Select a city</option>
+                  <option value="Cairo">Cairo</option>
+                  <option value="Alexandria">Alexandria</option>
+                  <option value="Giza">Giza</option>
+                  <option value="Port Said">Port Said</option>
+                  <option value="Suez">Suez</option>
+                  <option value="Luxor">Luxor</option>
+                  <option value="Mansoura">Mansoura</option>
+                  <option value="Tanta">Tanta</option>
+                  <option value="Asyut">Asyut</option>
+                  <option value="Ismailia">Ismailia</option>
+                  <option value="Fayyum">Fayyum</option>
+                  <option value="Zagazig">Zagazig</option>
+                  <option value="Damietta">Damietta</option>
+                  <option value="Aswan">Aswan</option>
+                  <option value="Minya">Minya</option>
+                  <option value="Damanhur">Damanhur</option>
+                  <option value="Beni Suef">Beni Suef</option>
+                  <option value="Hurghada">Hurghada</option>
+                  <option value="Qena">Qena</option>
+                  <option value="Sohag">Sohag</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="filter__col">
+              <h2  style=" text-align: center">Categories</h2>
+              <div class="filter__labels">
+                <select id="categories">
+                  <option value="">Select a category</option>
+                  <option value="Books">Books</option>
+                  <option value="Services">Services</option>
+                  <option value="Electronics">Electronics</option>
+                  <option value="Accessories">Accessories</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="filter__col">
+              <h2  style=" text-align: center">Price Lower than</h2>
+              <div class="filter__labels">
+                <select id="price[lte]">
+                  <option value="">Select a Price</option>
+                  <option value="100">100</option>
+                  <option value="500">500</option>
+                  <option value="1000">1000</option>
+                  <option value="5000">5000</option>
+                  <option value="10000">10000</option>
+                  <option value="50000">50000</option>
+                  <option value="100000">100000</option>
+                  <option value="500000">500000</option>
+                </select>
+              </div>
+            </div>
           </div>
+
+
           <div class="cards__block">
             <div class="cards">
               <div class="card">
