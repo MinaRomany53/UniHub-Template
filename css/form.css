@@ -1,7 +1,67 @@
 .form--main {
+  position: relative;
   min-height: 89vh;
   padding: 3rem;
 }
+/* Start Modal styles */
+.modal {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 40rem;
+}
+
+@media (max-width: 992px) {
+  .modal {
+    width: 40%;
+  }
+}
+@media (max-width: 786px) {
+  .modal {
+    width: 100%;
+  }
+}
+.modal-content {
+  position: relative;
+  padding: 2rem;
+  background-color: #fff;
+  border: 1px solid #915edf;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+/* Close button */
+.close {
+  color: #aaa;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Success alert styles */
+.success .modal-content {
+  color: var(--color-secondary);
+  border: 1px solid var(--color-secondary);
+}
+
+/* Fail alert styles */
+.fail .modal-content {
+  color: red;
+  border: 1px solid red;
+}
+/* End Modal styles */
+
 .form-box {
   margin: 0 auto;
   background-color: #fff;
